@@ -30,7 +30,7 @@ function Portfolio() {
 		{
 			id: "slide2",
 			image: portf,
-			link: "https://google.es",
+			link: "https://github.com/danielgauchia/danielgauchia.github.io/tree/master",
 			subtext_en:
 				"This project signifies a significant milestone in my career as a web developer, as it is my first React app, showcasing my ability to create scalable and responsive applications.",
 			subtext_es:
@@ -41,7 +41,7 @@ function Portfolio() {
 			image: planif,
 			link: "https://github.com/danielgauchia/planificador",
 			subtext_en:
-				"Budget Handler is a user-friendly and efficient mobile application developed using React Native. It serves as a comprehensive monthly budget handler, allowing users to effortlessly track their expenses. Whether you want to keep an eye on your spending habits, allocate funds to various categories, or analyze your expenditure by date or category, Budget Handler has got you covered..",
+				"Budget Handler is a user-friendly and efficient mobile application developed using React Native. It serves as a comprehensive monthly budget handler, allowing users to effortlessly track their expenses. Whether you want to keep an eye on your spending habits, allocate funds to various categories, or analyze your expenditure by date or category, Budget Handler has got you covered.",
 			subtext_es:
 				"Budget Handler es una aplicación móvil fácil de usar y eficiente desarrollada con React Native. Sirve como un controlador de presupuesto mensual integral, lo que permite a los usuarios realizar un seguimiento de sus gastos sin esfuerzo. Ya sea que desee controlar sus hábitos de gasto, asignar fondos a varias categorías o analizar sus gastos por fecha o categoría, Budget Handler lo tiene cubierto.",
 		},
