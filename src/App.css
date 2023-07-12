@@ -329,7 +329,7 @@ input:checked + div span.line-2 {
 
 .slides img.blurred-previous,
 img.blurred-next {
-	filter: blur(3px);
+	filter: brightness(0.2);
 	max-width: 70%;
 	margin: 10px;
 }
@@ -659,12 +659,12 @@ button[type="submit"]:hover {
 	}
 
 	.slides img.blurred-previous {
-		filter: blur(3px);
+
 		max-width: 70%;
 		margin-bottom: 10px;
 	}
 	.slides img.blurred-next {
-		filter: blur(3px);
+
 		max-width: 70%;
 		margin-top: 10px;
 	}

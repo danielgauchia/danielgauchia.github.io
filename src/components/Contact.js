@@ -71,7 +71,7 @@ function Contact() {
 								</span>
 								<div className='contact__info'>
 									<h3>Linkedin</h3>
-									<a href='https://linkedin.com/'>danielgauchia</a>
+									<a href='https://www.linkedin.com/in/daniel-gauchia-alba/'>danielgauchia</a>
 								</div>
 							</div>
 						</div>
