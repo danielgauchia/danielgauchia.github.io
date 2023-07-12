@@ -46,6 +46,7 @@ section {
 
 .hand {
 	max-width: 15%;
+	min-width: 80px;
 	transition: transform 0.3s; /* Smooth transition for rotation animation */
 }
 
