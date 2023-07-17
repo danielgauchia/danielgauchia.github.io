@@ -142,7 +142,7 @@ function Navigation() {
 							<h4 onClick={() => handleLinkClick("skills")}>Technologies</h4>
 						</li>
 						<li>
-							<h4 onClick={() => handleLinkClick("portfolio")}>Portfolio</h4>
+							<h4 onClick={() => handleLinkClick("portfolio")}>Projects</h4>
 						</li>
 
 						<li>

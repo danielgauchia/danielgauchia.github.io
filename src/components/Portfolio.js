@@ -8,9 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Portfolio() {
 	const { language } = useContext(LanguageContext);
 	const [currentIndex, setCurrentIndex] = useState(0);
+
 	const renderTitle = () => {
 		if (language === "English") {
-			return <h1>Portfolio</h1>;
+			return <h1>Projects</h1>;
 		} else if (language === "Español") {
 			return <h1>Proyectos</h1>;
 		}
@@ -22,6 +23,7 @@ function Portfolio() {
 			id: "slide1",
 			image: sl_app,
 			link: "",
+			live: "",
 			subtext_en:
 				"The StreetLifter Training Companion is an Android app developed in Java using Android Studio. Its extensive range of functionalities, including exercise management, RM calculation, weight plate calculator, exercise videos, and additional utilities, aims to simplify and enhance the streetlifting training experience. By utilizing this app, streetlifters can optimize their workouts, track their progress, and achieve their fitness goals more efficiently and effectively.",
 			subtext_es:
@@ -31,6 +33,7 @@ function Portfolio() {
 			id: "slide2",
 			image: portf,
 			link: "https://github.com/danielgauchia/danielgauchia.github.io/tree/master",
+			live: "https://danielgauchia.github.io/",
 			subtext_en:
 				"This project signifies a significant milestone in my career as a web developer, as it is my first React app, showcasing my ability to create scalable and responsive applications.",
 			subtext_es:
@@ -40,6 +43,7 @@ function Portfolio() {
 			id: "slide3",
 			image: planif,
 			link: "https://github.com/danielgauchia/planificador",
+			live: "",
 			subtext_en:
 				"Budget Handler is a user-friendly and efficient mobile application developed using React Native. It serves as a comprehensive monthly budget handler, allowing users to effortlessly track their expenses. Whether you want to keep an eye on your spending habits, allocate funds to various categories, or analyze your expenditure by date or category, Budget Handler has got you covered.",
 			subtext_es:
@@ -77,9 +81,17 @@ function Portfolio() {
 
 	const getSubtext = () => {
 		if (language === "English") {
-			return slides[currentIndex].subtext_en;
+			return (
+				<div className="subtext">
+					{slides[currentIndex].subtext_en}
+				</div>
+			);
 		} else if (language === "Español") {
-			return slides[currentIndex].subtext_es;
+			return (
+				<div className="subtext">
+					{slides[currentIndex].subtext_es}
+				</div>
+			);
 		}
 		return "";
 	};
@@ -87,11 +99,40 @@ function Portfolio() {
 	const github = () => {
 		if (slides[currentIndex].link !== "") {
 			return (
-				<p>
-					<a className='github' href={slides[currentIndex].link}>
-						<FontAwesomeIcon className='icon' icon='fa-brands fa-github' />
-					</a>
-				</p>
+				
+				<>
+				<span>
+					<FontAwesomeIcon
+						className='icon'
+						icon='fa-brands fa-github'
+					/>
+				</span>
+				<div className='info'>
+					<h3>Github</h3>
+					<a href={slides[currentIndex].link}>Source Code </a>
+				</div>
+				</>
+			);
+		} else {
+			return "";
+		}
+	};
+
+	const live = () => {
+		if (slides[currentIndex].live !== "") {
+			return (
+				<>
+				<span>
+					<FontAwesomeIcon
+						className='icon'
+						icon='fas fa-rocket'
+					/>
+				</span>
+				<div className='info'>
+					<h3>Live</h3>
+					<a href={slides[currentIndex].link}>See Live</a>
+				</div>
+				</>
 			);
 		} else {
 			return "";
@@ -150,7 +191,10 @@ function Portfolio() {
 								</div>
 								<div className='carousel-subtext'>
 									{getSubtext()}
-									{github()}
+									<div className='icon-box'>
+										{github()}
+										{live()}
+									</div>
 								</div>
 							</div>
 						))}

@@ -27,14 +27,14 @@ section {
 .container {
 	display: flex;
 	align-items: center;
-	justify-content: center; /* Center the content horizontally */
+	justify-content: center; 
 	padding: 20px;
-	text-align: center; /* Center the text within the container */
+	text-align: center; 
 }
 
 .me {
 	max-width: 400px;
-	border-radius: 100px;
+	border-radius: 10% 30% 50% 70%;
 	border: 5px solid #000;
 	background: var(--color-secondary);
 	
@@ -104,7 +104,6 @@ section {
 	text-transform: uppercase;
 }
 .subtitle {
-	font-style: italic;
 	font-weight: bold;
 	font-size: 2rem;
 	margin-top: 10px;
@@ -184,7 +183,7 @@ nav ul {
 	background-color: var(--color-secondary);
 	left: -5px;
 	right: -5px;
-	bottom: -5px;
+	bottom: -4px;
 	height: 111%;
 	transition: all 0.3s ease;
 }
@@ -314,18 +313,23 @@ input:checked + div span.line-2 {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+	
 }
 
 .carousel-dot {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(252, 252, 252);
 	margin: 0 5px;
+	cursor: pointer;
+	border: 1px solid black; 
+
 }
 
 .carousel-dot.active {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0);
+	border: 1px solid white; 
 }
 
 .slides img.blurred-previous,
@@ -470,40 +474,41 @@ button[type="submit"]:hover {
 	margin-top: 1.3rem;
 }
 
-.contact__icon-box {
+.icon-box {
 	display: flex;
 	align-items: center;
 	gap: 1.5rem;
 }
 
-.contact__icon-box span {
+.icon-box span {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 	padding: 1.3rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 }
-.contact__icon-box span .icon {
+.icon-box span .icon {
 	font-size: 2rem;
 }
-.contact__info {
+.info {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 }
-.contact__info h3 {
+
+.info h3 {
 	font-size: 1.3rem;
 	color: var(--color-white);
 }
-.contact__info a,
-.contact__info p {
+.info a,
+.info p {
 	font-size: 1.3rem;
 	color: var(--color-white);
 	text-decoration: none;
 	cursor: pointer;
 }
-.contact__info a:hover,
-.contact__info p:hover {
+.info a:hover,
+.info p:hover {
 	color: var(--color-secondary);
 	transition: all 0.3s;
 }
@@ -511,7 +516,9 @@ button[type="submit"]:hover {
 	position: relative;
 	margin: 20px 0;
 }
-
+.subtext{
+	margin-bottom: 10px;
+}
 .timeline:before {
 	content: "";
 	position: absolute;
@@ -610,7 +617,7 @@ button[type="submit"]:hover {
 	}
 }
 @media (max-width: 750px) {
-	.contact__icon-box {
+	.icon-box {
 		flex-direction: column;
 	}
 	.left-contact {

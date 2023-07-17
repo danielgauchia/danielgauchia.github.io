@@ -41,10 +41,6 @@ function About() {
 				<>
 					<p>Hardworking, reliable, organized and motivated employee.</p>
 					<p>
-						Seeking entry-level opportunities to expand skills while
-						facilitating company growth.
-					</p>
-					<p>
 						Highly organized, proactive and punctual with a team-oriented
 						mentality.
 					</p>
@@ -54,10 +50,6 @@ function About() {
 			return (
 				<>
 					<p>Empleado trabajador, confiable, organizado y motivado.</p>
-					<p>
-						Buscando oportunidades de nivel de entrada para expandir habilidades
-						mientras facilito el crecimiento de la empresa.
-					</p>
 					<p>
 						Altamente organizado, proactivo y puntual con una mentalidad
 						orientada al trabajo en equipo.
@@ -102,7 +94,7 @@ function About() {
 			return (
 				<>
 					<p className='large-text'>Languages</p>
-					<p className='small-text'>Native: Spanish &amp; Catalonian</p>
+					<p className='small-text'>Native: Spanish &amp; Valencian</p>
 					<p className='small-text'>B2: English </p>
 				</>
 			);
@@ -110,7 +102,7 @@ function About() {
 			return (
 				<>
 					<p className='large-text'>Idiomas</p>
-					<p className='small-text'>Nativo: Español &amp; Catalán</p>
+					<p className='small-text'>Nativo: Español &amp; Valenciano</p>
 					<p className='small-text'>B2: Inglés</p>
 				</>
 			);
@@ -173,9 +165,11 @@ function About() {
 	};
 
 	return (
-		<section id='about'> 
+		<section id='about'>
 			<div className='container'>
-				<img src={me} alt='Not found' className='me' />
+				<div className='me-container'>
+					<img src={me} alt='Not found' className='me' />
+				</div>
 				<div className='left-about'>
 					<div>
 						{renderGreeting()}

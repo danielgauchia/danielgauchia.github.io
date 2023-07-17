@@ -21,27 +21,27 @@ function Contact() {
 				<div className='left-contact'>
 					<div className='contact__content'>
 						<div className='contact__icons'>
-							<div className='contact__icon-box'>
+							<div className='icon-box'>
 								<span>
 									<FontAwesomeIcon
 										className='icon'
 										icon='fa-solid fa-map-location-dot'
 									/>
 								</span>
-								<div className='contact__info'>
+								<div className='info'>
 									{renderLocation()}
 									<p>Castellón, Spain</p>
 								</div>
 							</div>
 
-							<div className='contact__icon-box'>
+							<div className='icon-box'>
 								<span>
 									<FontAwesomeIcon
 										className='icon'
 										icon='fa-solid fa-envelope-open-text'
 									/>
 								</span>
-								<div className='contact__info'>
+								<div className='info'>
 									<h3>Email</h3>
 									<a href='mailto:danielgauchia@gmail.com'>
 										danielgauchia@gmail.com
@@ -49,27 +49,27 @@ function Contact() {
 								</div>
 							</div>
 
-							<div className='contact__icon-box'>
+							<div className='icon-box'>
 								<span>
 									<FontAwesomeIcon
 										className='icon'
 										icon='fa-brands fa-github'
 									/>
 								</span>
-								<div className='contact__info'>
+								<div className='info'>
 									<h3>Github</h3>
 									<a href='https://github.com/danielgauchia'>danielgauchia</a>
 								</div>
 							</div>
 
-							<div className='contact__icon-box'>
+							<div className='icon-box'>
 								<span>
 									<FontAwesomeIcon
 										className='icon'
 										icon='fa-brands fa-linkedin'
 									/>
 								</span>
-								<div className='contact__info'>
+								<div className='info'>
 									<h3>Linkedin</h3>
 									<a href='https://www.linkedin.com/in/daniel-gauchia-alba/'>danielgauchia</a>
 								</div>
