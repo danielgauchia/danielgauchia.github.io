@@ -10,9 +10,9 @@ function About() {
 
 	const renderSubtitle = () => {
 		if (language === "English") {
-			return <>Full-Stack React Developer</>;
+			return <>Full-Stack Developer</>;
 		} else if (language === "Español") {
-			return <>Desarrollador Full-Stack en React</>;
+			return <>Desarrollador Full-Stack</>;
 		}
 		return null;
 	};
