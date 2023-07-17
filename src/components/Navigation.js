@@ -139,7 +139,7 @@ function Navigation() {
 							<h4 onClick={() => handleLinkClick("about")}>Home</h4>
 						</li>
 						<li>
-							<h4 onClick={() => handleLinkClick("skills")}>Technologies</h4>
+							<h4 onClick={() => handleLinkClick("timeline")}>Timeline</h4>
 						</li>
 						<li>
 							<h4 onClick={() => handleLinkClick("portfolio")}>Projects</h4>
@@ -175,7 +175,7 @@ function Navigation() {
 							<h4 onClick={() => handleLinkClick("about")}>Índice</h4>
 						</li>
 						<li>
-							<h4 onClick={() => handleLinkClick("skills")}>Tecnologías</h4>
+							<h4 onClick={() => handleLinkClick("timeline")}>Linea Temporal</h4>
 						</li>
 						<li>
 							<h4 onClick={() => handleLinkClick("portfolio")}>Proyectos</h4>
