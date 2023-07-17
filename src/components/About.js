@@ -7,47 +7,31 @@ import { LanguageContext } from "./LanguageContext";
 
 function About() {
 	const { language } = useContext(LanguageContext);
-	const renderGreeting = () => {
-		if (language === "English") {
-			return (
-				<>
-					<img src={hand} alt='Not found' className='hand' />
-					<p className='subtitle'>Hello, I'm</p>
-				</>
-			);
-		} else if (language === "Español") {
-			return (
-				<>
-					<img src={hand} alt='Not found' className='hand' />
-					<p className='subtitle'>Hola, soy</p>
-				</>
-			);
-		}
-		return null;
-	};
 
 	const renderSubtitle = () => {
 		if (language === "English") {
-			return <p className='subtitle'>A Fullstack Developer</p>;
+			return <>Full-Stack React Developer</>;
 		} else if (language === "Español") {
-			return <p className='subtitle'>Desarrollador Fullstack</p>;
+			return <>Desarrollador Full-Stack en React</>;
 		}
 		return null;
 	};
 
-	const renderHabilities = () => {
+	const renderText = () => {
 		if (language === "English") {
 			return (
-				<>
-					<p>Hardworking, reliable, organized and motivated employee.</p>
-					
-				</>
+				<p>
+					Hello i'm Daniel Gauchía, a hardworking, reliable, organized and
+					motivated employee.
+				</p>
 			);
 		} else if (language === "Español") {
 			return (
 				<>
-					<p>Empleado trabajador, confiable, organizado y motivado.</p>
-					
+					<p>
+						Hola soy Daniel Gauchía, un empleado trabajador, confiable,
+						organizado y motivado.
+					</p>
 				</>
 			);
 		}
@@ -83,10 +67,6 @@ function About() {
 		return null;
 	};
 
-	
-	
-	
-
 	return (
 		<section id='about'>
 			<div className='container'>
@@ -95,16 +75,17 @@ function About() {
 				</div>
 				<div className='left-about'>
 					<div>
-						{renderGreeting()}
 						<h1>
-							<span className='name'>Daniel Gauchía</span>
+							<span className='name'>
+								{renderSubtitle()}
+								<img src={hand} alt='Not found' className='hand' />
+							</span>
 						</h1>
-						{renderSubtitle()}
-						<div className='habilities'>{renderHabilities()}</div>
+
+						<div className='habilities'>{renderText()}</div>
 						<div className='button'>{renderResumeLinkText()}</div>
 					</div>
 				</div>
-				
 			</div>
 		</section>
 	);

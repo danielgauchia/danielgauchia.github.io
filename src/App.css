@@ -60,9 +60,9 @@ section {
 }
 
 .hand {
-	max-width: 100px;
-	width: 15%;
-	min-width: 80px;
+	
+	width: 4rem;
+	margin-left: 10px;
 	transition: transform 0.3s;
 }
 
@@ -70,14 +70,20 @@ section {
 	transform: rotate(50deg);
 }
 .name {
+	
 	font-weight: bold;
 	color: var(--color-secondary);
 }
 
-
+#timeline{
+	margin-top: 130px;
+}
 
 .left-about {
+	display: flex;
 	padding-right: 5rem;
+	flex-direction: column;
+    max-width: 25rem;
 }
 .left-about p {
 	line-height: 2rem;
@@ -93,8 +99,9 @@ section {
 	margin-top: 10px;
 }
 .habilities {
-	font-style: italic;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6;
 	margin-top: 10px;
 }
 
