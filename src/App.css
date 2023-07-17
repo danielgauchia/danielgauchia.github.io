@@ -294,6 +294,7 @@ input:checked + div span.line-2 {
 }
 
 .carousel-slide img {
+	max-width: 100%;
 	width: 37.5rem;
 	height: auto;
 	outline: 2px solid var(--color-secondary);
