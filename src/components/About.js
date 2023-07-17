@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import me from "../img/Me.png";
-import hand from "../img/hand.png";
+import me from "../img/Me.webp";
+import hand from "../img/hand.webp";
 import cv from "../files/Daniel Gauchía Alba.pdf";
 import cves from "../files/es Daniel Gauchía Alba.pdf";
 import { LanguageContext } from "./LanguageContext";

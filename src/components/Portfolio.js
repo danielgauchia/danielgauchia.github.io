@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "./LanguageContext";
-import sl_app from "../img/slapp.png";
-import portf from "../img/portfolio.png";
-import planif from "../img/planificadorgastos.png";
+import sl_app from "../img/slapp.webp";
+import portf from "../img/portfolio.webp";
+import planif from "../img/planificadorgastos.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Portfolio() {

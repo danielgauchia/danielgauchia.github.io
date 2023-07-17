@@ -44,6 +44,7 @@ function Dropdown() {
 							}
 							boxSize='15px'
 							mr={2}
+							alt="Not found"
 						/>
 						{language}
 					</Flex>
@@ -56,7 +57,8 @@ function Dropdown() {
 							color='black'
 						>
 							<Flex align='center'>
-								<Image src={item.icon} boxSize='15px' mr={2} />
+								<Image src={item.icon} boxSize='15px' mr={2}
+								alt="Not found"/>
 								{item.label}
 							</Flex>
 						</MenuItem>
