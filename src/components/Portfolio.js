@@ -81,38 +81,40 @@ function Portfolio() {
 
 	const getSubtext = () => {
 		if (language === "English") {
-			return (
-				<div className="subtext">
-					{slides[currentIndex].subtext_en}
-				</div>
-			);
+			return <div className='subtext'>{slides[currentIndex].subtext_en}</div>;
 		} else if (language === "Español") {
-			return (
-				<div className="subtext">
-					{slides[currentIndex].subtext_es}
-				</div>
-			);
+			return <div className='subtext'>{slides[currentIndex].subtext_es}</div>;
 		}
 		return "";
 	};
 
 	const github = () => {
 		if (slides[currentIndex].link !== "") {
-			return (
-				
-				<>
-				<span>
-					<FontAwesomeIcon
-						className='icon'
-						icon='fa-brands fa-github'
-					/>
-				</span>
-				<div className='info'>
-					<h3>Github</h3>
-					<a href={slides[currentIndex].link}>Source Code </a>
-				</div>
-				</>
-			);
+			if (language === "English") {
+				return (
+					<>
+						<span>
+							<FontAwesomeIcon className='icon' icon='fa-brands fa-github' />
+						</span>
+						<div className='info'>
+							<h3>Github</h3>
+							<a href={slides[currentIndex].link}>Source Code </a>
+						</div>
+					</>
+				);
+			} else if (language === "Español") {
+				return (
+					<>
+						<span>
+							<FontAwesomeIcon className='icon' icon='fa-brands fa-github' />
+						</span>
+						<div className='info'>
+							<h3>Github</h3>
+							<a href={slides[currentIndex].link}>Código Fuente </a>
+						</div>
+					</>
+				);
+			}
 		} else {
 			return "";
 		}
@@ -120,20 +122,31 @@ function Portfolio() {
 
 	const live = () => {
 		if (slides[currentIndex].live !== "") {
-			return (
-				<>
-				<span>
-					<FontAwesomeIcon
-						className='icon'
-						icon='fas fa-rocket'
-					/>
-				</span>
-				<div className='info'>
-					<h3>Live</h3>
-					<a href={slides[currentIndex].live}>See Live</a>
-				</div>
-				</>
-			);
+			if (language === "English") {
+				return (
+					<>
+						<span>
+							<FontAwesomeIcon className='icon' icon='fas fa-rocket' />
+						</span>
+						<div className='info'>
+							<h3>Live</h3>
+							<a href={slides[currentIndex].live}>See Live</a>
+						</div>
+					</>
+				);
+			} else if (language === "Español") {
+				return (
+					<>
+						<span>
+							<FontAwesomeIcon className='icon' icon='fas fa-rocket' />
+						</span>
+						<div className='info'>
+							<h3>Ejemplo</h3>
+							<a href={slides[currentIndex].live}>Ver Ejemplo</a>
+						</div>
+					</>
+				);
+			}
 		} else {
 			return "";
 		}

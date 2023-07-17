@@ -124,7 +124,7 @@ function Navigation() {
 		if (language === "English") {
 			return (
 				<nav style={navStyle}>
-					<h3 className='logo'>Gauchia.dev</h3>
+					<h3 className='logo' onClick={() => handleLinkClick("about")}>Gauchia.dev</h3>
 					<div className='switch'>
 						<input
 							type='checkbox'
@@ -160,7 +160,7 @@ function Navigation() {
 		} else if (language === "Español") {
 			return (
 				<nav style={navStyle}>
-					<h3 className='logo'>Gauchia.dev</h3>
+					<h3 className='logo' onClick={() => handleLinkClick("about")}>Gauchia.dev</h3>
 
 					<div className='switch'>
 						<input

@@ -21,6 +21,19 @@ section {
 	margin-top: 100px;
 }
 
+::-webkit-scrollbar {
+	width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-secondary); /* Color of the scrollbar handle */
+	border-radius: 5px; /* Rounded corners of the handle */
+}
+
+::-webkit-scrollbar-track {
+	background: "transparent"; /* Color of the scrollbar track */
+}
+
 .container {
 	display: flex;
 	align-items: center;
@@ -60,7 +73,6 @@ section {
 }
 
 .hand {
-	
 	width: 4rem;
 	height: 4rem;
 	margin-left: 10px;
@@ -71,12 +83,11 @@ section {
 	transform: rotate(50deg);
 }
 .name {
-	
 	font-weight: bold;
 	color: var(--color-secondary);
 }
 
-#timeline{
+#timeline {
 	margin-top: 130px;
 }
 
@@ -84,7 +95,7 @@ section {
 	display: flex;
 	padding-right: 5rem;
 	flex-direction: column;
-    max-width: 25rem;
+	max-width: 25rem;
 }
 .left-about p {
 	line-height: 2rem;
@@ -101,8 +112,8 @@ section {
 }
 .habilities {
 	font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.6;
+	font-weight: 500;
+	line-height: 1.6;
 	margin-top: 10px;
 }
 
@@ -162,6 +173,7 @@ nav ul {
 	z-index: 1;
 }
 .logo {
+	cursor: pointer;
 	margin-left: 10px;
 	font-size: 1.6em;
 	color: var(--color-secondary);
@@ -602,7 +614,7 @@ button[type="submit"]:hover {
 @media (max-width: 509px) {
 	.me {
 		width: 350px;
-		height:  350px;
+		height: 350px;
 	}
 }
 @media (max-width: 750px) {

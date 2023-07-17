@@ -21,7 +21,7 @@ function About() {
 		if (language === "English") {
 			return (
 				<p>
-					Hello i'm Daniel Gauchía, a hardworking, reliable, organized and
+					Hello I'm Daniel Gauchía, a hardworking, reliable, organized and
 					motivated employee.
 				</p>
 			);
