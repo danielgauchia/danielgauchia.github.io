@@ -130,7 +130,7 @@ function Portfolio() {
 				</span>
 				<div className='info'>
 					<h3>Live</h3>
-					<a href={slides[currentIndex].link}>See Live</a>
+					<a href={slides[currentIndex].live}>See Live</a>
 				</div>
 				</>
 			);
