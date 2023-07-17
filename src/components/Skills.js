@@ -36,14 +36,14 @@ function Skills() {
 	];
 	const renderTitle = () => {
 		if (language === "English") {
-			return <h1>Tech stack</h1>;
+			return <h1>Tech Stack</h1>;
 		} else if (language === "Español") {
 			return <h1>Tecnologías</h1>;
 		}
 		return null;
 	};
 	return (
-		<section id='skills' className='section-animation'>
+		<section id='skills'>
 			<div className='container'>
 				<div className='content'>
 					{renderTitle()}

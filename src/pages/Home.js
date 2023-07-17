@@ -9,17 +9,17 @@ import Contact from "../components/Contact";
 import Timeline from "../components/Timeline";
 
 function Home() {
-    return (
-        <>
-                <Navigation />
-                <About />
-                <Timeline/>
-                <Skills />
-                <Portfolio/>
-                <Contact />
-                <Footer />
-        </>
-    );
+	return (
+		<>
+			<Navigation />
+			<About />
+			<Skills />
+			<Timeline />
+			<Portfolio />
+			<Contact />
+			<Footer />
+		</>
+	);
 }
 
 export default Home;

@@ -40,20 +40,14 @@ function About() {
 			return (
 				<>
 					<p>Hardworking, reliable, organized and motivated employee.</p>
-					<p>
-						Highly organized, proactive and punctual with a team-oriented
-						mentality.
-					</p>
+					
 				</>
 			);
 		} else if (language === "Español") {
 			return (
 				<>
 					<p>Empleado trabajador, confiable, organizado y motivado.</p>
-					<p>
-						Altamente organizado, proactivo y puntual con una mentalidad
-						orientada al trabajo en equipo.
-					</p>
+					
 				</>
 			);
 		}
@@ -89,80 +83,9 @@ function About() {
 		return null;
 	};
 
-	const renderAboutItemText1 = () => {
-		if (language === "English") {
-			return (
-				<>
-					<p className='large-text'>Languages</p>
-					<p className='small-text'>Native: Spanish &amp; Valencian</p>
-					<p className='small-text'>B2: English </p>
-				</>
-			);
-		} else if (language === "Español") {
-			return (
-				<>
-					<p className='large-text'>Idiomas</p>
-					<p className='small-text'>Nativo: Español &amp; Valenciano</p>
-					<p className='small-text'>B2: Inglés</p>
-				</>
-			);
-		}
-		return null;
-	};
-	const renderAboutItemText2 = () => {
-		if (language === "English") {
-			return (
-				<>
-					<p className='large-text'>10+</p>
-					<p className='small-text'>Projects Completed</p>
-				</>
-			);
-		} else if (language === "Español") {
-			return (
-				<>
-					<p className='large-text'>10+</p>
-					<p className='small-text'>Proyectos completados</p>
-				</>
-			);
-		}
-		return null;
-	};
-	const renderAboutItemText3 = () => {
-		if (language === "English") {
-			return (
-				<>
-					<p className='large-text'>100%</p>
-					<p className='small-text'>Motivation to learn and work</p>
-				</>
-			);
-		} else if (language === "Español") {
-			return (
-				<>
-					<p className='large-text'>100%</p>
-					<p className='small-text'>Motivación para aprender y trabajar</p>
-				</>
-			);
-		}
-		return null;
-	};
-	const renderAboutItemText4 = () => {
-		if (language === "English") {
-			return (
-				<>
-					<p className='large-text'>5+</p>
-					<p className='small-text'>Courses Completed</p>
-				</>
-			);
-		} else if (language === "Español") {
-			return (
-				<>
-					<p className='large-text'>5+</p>
-					<p className='small-text'>Cursos completados</p>
-				</>
-			);
-		}
-		return null;
-	};
+	
+	
+	
 
 	return (
 		<section id='about'>
@@ -174,27 +97,14 @@ function About() {
 					<div>
 						{renderGreeting()}
 						<h1>
-							<span className='name'>Daniel Gauchía Alba</span>
+							<span className='name'>Daniel Gauchía</span>
 						</h1>
 						{renderSubtitle()}
 						<div className='habilities'>{renderHabilities()}</div>
 						<div className='button'>{renderResumeLinkText()}</div>
 					</div>
 				</div>
-				<div className='right-about'>
-					<div className='about-item'>
-						<div className='abt-text'>{renderAboutItemText1()}</div>
-					</div>
-					<div className='about-item'>
-						<div className='abt-text'>{renderAboutItemText2()}</div>
-					</div>
-					<div className='about-item'>
-						<div className='abt-text'>{renderAboutItemText3()}</div>
-					</div>
-					<div className='about-item'>
-						<div className='abt-text'>{renderAboutItemText4()}</div>
-					</div>
-				</div>
+				
 			</div>
 		</section>
 	);

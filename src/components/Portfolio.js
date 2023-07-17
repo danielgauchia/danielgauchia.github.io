@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Portfolio() {
 	const { language } = useContext(LanguageContext);
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentIndex, setCurrentIndex] = useState(1);
 
 	const renderTitle = () => {
 		if (language === "English") {
