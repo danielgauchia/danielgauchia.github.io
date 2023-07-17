@@ -110,11 +110,14 @@ function Navigation() {
 		};
 		const scrollToSection = (sectionId) => {
 			const section = document.getElementById(sectionId);
-
-			if (section) {
+			if (sectionId === 'about') {
+				window.scrollTo({ top: window.top, behavior: "smooth" });
+			}
+			else if (section) {
 				const offset = section.offsetTop - 60;
 				window.scrollTo({ top: offset, behavior: "smooth" });
 			}
+			
 		};
 		if (language === "English") {
 			return (
