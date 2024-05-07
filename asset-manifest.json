@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32601ba2.css",
+    "main.js": "/static/js/main.cb65cfc9.js",
+    "static/js/787.b2e1b36e.chunk.js": "/static/js/787.b2e1b36e.chunk.js",
+    "static/media/Me.webp": "/static/media/Me.b2c5ab4a64760ec6da52.webp",
+    "static/media/slapp.webp": "/static/media/slapp.115b9bff661bdf92e0e1.webp",
+    "static/media/planificadorgastos.webp": "/static/media/planificadorgastos.86f41ced95fa1fa933da.webp",
+    "static/media/es.svg": "/static/media/es.4ba7dfef94e6919891ae20551c1838de.svg",
+    "static/media/portfolio.webp": "/static/media/portfolio.e4289e55a4d238d98f2a.webp",
+    "static/media/Daniel Gauchía Alba.pdf": "/static/media/Daniel Gauchía Alba.8ec649f54fadd6ebdcea.pdf",
+    "static/media/es Daniel Gauchía Alba.pdf": "/static/media/es Daniel Gauchía Alba.532b8cdeb04f145f2492.pdf",
+    "static/media/hand.webp": "/static/media/hand.cf6ebae06de489239152.webp",
+    "static/media/Python.svg": "/static/media/Python.2b59b208a4983c3ec466d226201e5098.svg",
+    "static/media/react.svg": "/static/media/react.afac9c43724070bf6674f2692b7356a9.svg",
+    "static/media/java.svg": "/static/media/java.5e8cb917c7f11276e9f9d00d4dce53b5.svg",
+    "static/media/javascript.svg": "/static/media/javascript.de4c2594613e34b15666206bbede7327.svg",
+    "static/media/css3.svg": "/static/media/css3.9cecabbf6ce67609c48bc4f280a11002.svg",
+    "index.html": "/index.html",
+    "static/media/gb.svg": "/static/media/gb.c92a8361e748d7386cdbc2525a8d6ea2.svg",
+    "static/media/html.svg": "/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
+    "main.32601ba2.css.map": "/static/css/main.32601ba2.css.map",
+    "main.cb65cfc9.js.map": "/static/js/main.cb65cfc9.js.map",
+    "787.b2e1b36e.chunk.js.map": "/static/js/787.b2e1b36e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32601ba2.css",
+    "static/js/main.cb65cfc9.js"
+  ]
+}
