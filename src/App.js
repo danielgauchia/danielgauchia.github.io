@@ -10,8 +10,8 @@ import StreetliftingCompanion from "./pages/StreetliftingCompanion";
 function App() {
 	return (
 		<Routes>
-			<Route path='' Component={StreetliftingCompanion} />
-			<Route path='portfolio' Component={Home} />
+			<Route exact path="/" Component={StreetliftingCompanion} />
+			<Route exact path="portfolio" Component={Home} />
 		</Routes>
 	);
 }
