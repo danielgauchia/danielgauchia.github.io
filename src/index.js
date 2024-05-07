@@ -3,17 +3,15 @@ import * as ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
-import { LanguageProvider } from "./components/LanguageContext";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<LanguageProvider>
-			<BrowserRouter>
-				<App />
-			</BrowserRouter>
-		</LanguageProvider>
-	</React.StrictMode>
+	<Router basename={"/"}>
+		
+			<App />
+		
+	</Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

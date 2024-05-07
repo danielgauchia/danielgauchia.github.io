@@ -33,7 +33,7 @@ function Portfolio() {
 			id: "slide2",
 			image: portf,
 			link: "https://github.com/danielgauchia/danielgauchia.github.io/tree/master",
-			live: "https://danielgauchia.github.io/",
+			live: "",
 			subtext_en:
 				"This project signifies a significant milestone in my career as a web developer, as it is my first React app, showcasing my ability to create scalable and responsive applications.",
 			subtext_es:
