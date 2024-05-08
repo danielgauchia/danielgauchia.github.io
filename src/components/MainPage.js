@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/streetliftingcompanion.webp";
+import logo from "../img/sl.webp";
 export default function MainPage() {
 	return (
 		<div className='main-page'>
