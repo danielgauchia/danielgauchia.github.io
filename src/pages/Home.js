@@ -7,7 +7,7 @@ import Skills from "../components/Skills";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Timeline from "../components/Timeline";
-import "./Home.css";
+import "../css/Home.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import {

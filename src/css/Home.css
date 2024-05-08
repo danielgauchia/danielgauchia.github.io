@@ -120,8 +120,11 @@ section {
 footer {
 	background-color: #212d2e;
 	color: #f4fefd;
-	padding: 20px;
+	height: 10vh;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 nav {
