@@ -5,13 +5,13 @@
 }
 
 :root {
-	--color-secondary: #2ecc71;
-	--color-ternary: #3a4f50;
+	--color-secondary: #c13232;
+	--color-ternary: #2c2c2c;
 	--color-white: #f4fefd;
 	--color-black: #000000;
 }
 body {
-	background: #1b2223;
+	background: #1c1c1c;
 	color: var(--color-white);
 }
 h1 {
@@ -84,7 +84,7 @@ section {
 }
 .name {
 	font-weight: bold;
-	color: var(--color-secondary);
+	color: var(--color-white);
 }
 
 #timeline {
@@ -118,7 +118,7 @@ section {
 }
 
 footer {
-	background-color: #212d2e;
+	background-color: #2c2c2c;
 	color: #f4fefd;
 	height: 10vh;
 	text-align: center;
