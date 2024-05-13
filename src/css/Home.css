@@ -126,6 +126,9 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 }
+footer p {
+	cursor: pointer;
+}
 
 nav {
 	position: fixed;

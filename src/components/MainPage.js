@@ -1,11 +1,29 @@
 import React from "react";
 import logo from "../img/sl.webp";
+import Slides from "./Slides";
 export default function MainPage() {
 	return (
 		<div className='main-page'>
-			<div>
-				<img src={logo} alt='Streetlifting Companion Logo' className="app-logo" />
+			
+			<div className="container"> 
+				<img
+					src={logo}
+					alt='Streetlifting Companion Logo'
+					className='app-logo'
+				/>
 			</div>
+			<Slides />
+			<button
+				className='collapsible'
+				type='button'
+				onClick={() => {
+					//redirect to https://forms.gle/h4oaKQNVAPjmg8K76
+					window.open("https://forms.gle/h4oaKQNVAPjmg8K76");
+				}}
+				
+			>
+				Participate in Beta Test
+			</button>
 			<button
 				type='button'
 				className='collapsible'
@@ -17,6 +35,7 @@ export default function MainPage() {
 			>
 				Privacy Policy for Streetlifting Companion
 			</button>
+
 			<div className='collapsible-div'>
 				<div className='paragraph'>
 					<h2>Privacy Policy for Streetlifting Companion</h2>
