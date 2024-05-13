@@ -10,11 +10,11 @@ function Slides() {
 	const slides = [
 		{
 			id: "slide1",
-			image: sl_app1,
+			image: sl_app2,
 		},
 		{
 			id: "slide2",
-			image: sl_app2,
+			image: sl_app1,
 		},
 		{
 			id: "slide3",
