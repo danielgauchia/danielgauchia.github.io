@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.6b12969a.css",
-    "main.js": "/static/js/main.6b806613.js",
+    "main.js": "/static/js/main.5b1bf71a.js",
     "static/js/787.b2e1b36e.chunk.js": "/static/js/787.b2e1b36e.chunk.js",
     "static/media/Me.webp": "/static/media/Me.b2c5ab4a64760ec6da52.webp",
     "static/media/slapp.webp": "/static/media/slapp.115b9bff661bdf92e0e1.webp",
-    "static/media/slapp3.webp": "/static/media/slapp3.17da2144b8568b3b0259.webp",
+    "static/media/slapp3.webp": "/static/media/slapp3.d04d30198079a3edc6c5.webp",
     "static/media/planificadorgastos.webp": "/static/media/planificadorgastos.86f41ced95fa1fa933da.webp",
-    "static/media/slapp1.webp": "/static/media/slapp1.1aa292e1f5202f0cb484.webp",
-    "static/media/slapp2.webp": "/static/media/slapp2.5e7537db8dc1d507b30c.webp",
+    "static/media/slapp2.webp": "/static/media/slapp2.76ddbcffb5127a84ac0f.webp",
+    "static/media/slapp1.webp": "/static/media/slapp1.5beb3a0ba18a3cfc6c68.webp",
     "static/media/es.svg": "/static/media/es.4ba7dfef94e6919891ae20551c1838de.svg",
     "static/media/portfolio.webp": "/static/media/portfolio.e4289e55a4d238d98f2a.webp",
     "static/media/Daniel Gauchía Alba.pdf": "/static/media/Daniel Gauchía Alba.8ec649f54fadd6ebdcea.pdf",
@@ -24,11 +24,11 @@
     "static/media/gb.svg": "/static/media/gb.c92a8361e748d7386cdbc2525a8d6ea2.svg",
     "static/media/html.svg": "/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "main.6b12969a.css.map": "/static/css/main.6b12969a.css.map",
-    "main.6b806613.js.map": "/static/js/main.6b806613.js.map",
+    "main.5b1bf71a.js.map": "/static/js/main.5b1bf71a.js.map",
     "787.b2e1b36e.chunk.js.map": "/static/js/787.b2e1b36e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b12969a.css",
-    "static/js/main.6b806613.js"
+    "static/js/main.5b1bf71a.js"
   ]
 }
