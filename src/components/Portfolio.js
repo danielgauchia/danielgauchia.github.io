@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { LanguageContext } from "./LanguageContext";
-import sl_app from "../img/slapp.webp";
+import sl_app from "../img/slapp3.webp";
 import portf from "../img/portfolio.webp";
 import planif from "../img/planificadorgastos.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,10 +16,10 @@ function Portfolio() {
 			image: sl_app,
 			link: "",
 			live: "",
-			subtext_en:
-				"The StreetLifter Training Companion is an Android app developed in Java using Android Studio. Its extensive range of functionalities, including exercise management, RM calculation, weight plate calculator, exercise videos, and additional utilities, aims to simplify and enhance the streetlifting training experience. By utilizing this app, streetlifters can optimize their workouts, track their progress, and achieve their fitness goals more efficiently and effectively.",
 			subtext_es:
-				"StreetLifter Training Companion es una aplicación de Android desarrollada en Java usando Android Studio. Su amplia gama de funcionalidades, que incluyen gestión de ejercicios, cálculo de RM, calculadora de discos de peso, videos de ejercicios y utilidades adicionales, tiene como objetivo simplificar y mejorar la experiencia de entrenamiento de streetlifting. Al utilizar esta aplicación, los streetlifters pueden optimizar sus entrenamientos, realizar un seguimiento de su progreso y lograr sus objetivos de acondicionamiento físico de manera más eficiente y efectiva.",
+				"Streetlifting Companion es una aplicación Android que tiene una amplia gama de funcionalidades, que incluyen gestión de ejercicios, cálculo de RM, calculadora de tabla RIR, gamificación y utilidades adicionales, tiene como objetivo simplificar y mejorar la experiencia de entrar streetlifting. Al utilizar esta aplicación, los streetlifters pueden optimizar sus entrenamientos, realizar un seguimiento de su progreso y alcanzar sus objetivos de acondicionamiento físico de manera más eficiente y efectiva.",
+			subtext_en:
+				"Streetlifting Companion is and Android app which has an extensive range of functionalities, including exercise management, RM calculation, RIR table calculator, gamification , and additional utilities, aims to simplify and enhance the streetlifting training experience. By utilizing this app, streetlifters can optimize their workouts, track their progress, and achieve their fitness goals more efficiently and effectively.",
 		},
 		{
 			id: "slide2",
