@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { LanguageContext } from "./LanguageContext";
 import sl_app from "../img/slapp.webp";
 import portf from "../img/portfolio.webp";
@@ -9,14 +9,6 @@ function Portfolio() {
 	const { language } = useContext(LanguageContext);
 	const [currentIndex, setCurrentIndex] = useState(1);
 
-	const renderTitle = () => {
-		if (language === "English") {
-			return <h1>Projects</h1>;
-		} else if (language === "Español") {
-			return <h1>Proyectos</h1>;
-		}
-		return null;
-	};
 
 	const slides = [
 		{
@@ -51,13 +43,6 @@ function Portfolio() {
 		},
 	];
 
-	const showSlide = (slideId) => {
-		const carouselSlides = document.getElementsByClassName("carousel-slide");
-		Array.from(carouselSlides).forEach((slide) => {
-			slide.style.display =
-				slide.getAttribute("data-slide-id") === slideId ? "block" : "none";
-		});
-	};
 
 	const goToPreviousSlide = () => {
 		let newIndex = currentIndex - 1;
@@ -75,9 +60,7 @@ function Portfolio() {
 		setCurrentIndex(newIndex);
 	};
 
-	useEffect(() => {
-		showSlide(slides[currentIndex].id);
-	});
+
 
 	const getSubtext = () => {
 		if (language === "English") {
@@ -156,61 +139,59 @@ function Portfolio() {
 		<section id='portfolio' className='section-animation'>
 			<div className='container'>
 				<div className='content'>
-					{renderTitle()}
+					
 					<div className='carousel'>
-						{slides.map((slide, index) => (
-							<div
-								className='carousel-slide'
-								key={slide.id}
-								data-slide-id={slide.id}
-								style={{ display: index === currentIndex ? "block" : "none" }}
-							>
-								<div className='slides'>
-									<img
-										src={
-											slides[(currentIndex - 1 + slides.length) % slides.length]
-												.image
-										}
-										alt={`Previous Project`}
-										className='blurred-previous'
-										onClick={goToPreviousSlide}
-									/>
-									<img
-										src={slide.image}
-										alt={`Current Project ${slide.id}`}
-										className='center'
-									/>
-									<img
-										src={slides[(currentIndex + 1) % slides.length].image}
-										alt={`Next Project`}
-										className='blurred-next'
-										onClick={goToNextSlide}
-									/>
-								</div>
-								<div className='carousel-dots'>
-									{slides.map((dotSlide) => (
-										<div
-											key={dotSlide.id}
-											className={`carousel-dot ${
-												dotSlide.id === slides[currentIndex].id ? "active" : ""
-											}`}
-											onClick={() =>
-												setCurrentIndex(
-													slides.findIndex((slide) => slide.id === dotSlide.id)
-												)
-											}
-										></div>
-									))}
-								</div>
-								<div className='carousel-subtext'>
-									{getSubtext()}
-									<div className='icon-box'>
-										{github()}
-										{live()}
-									</div>
-								</div>
+					
+						<div className='slides'>
+							<div className='previousslide'>
+								<img
+									src={
+										slides[(currentIndex - 1 + slides.length) % slides.length]
+											.image
+									}
+									alt={`Previous Screenshot`}
+									style={{ maxWidth: "100%" }}
+									onClick={goToPreviousSlide}
+								/>
 							</div>
-						))}
+							<div className='currentslide'>
+								<img
+									src={slides[currentIndex].image}
+									alt={`Current Screenshot`}
+									style={{ maxWidth: "100%" }}
+								/>
+							</div>
+							<div className='nextslide'>
+								<img
+									src={slides[(currentIndex + 1) % slides.length].image}
+									alt={`Next Screenshot`}
+									style={{ maxWidth: "100%" }}
+									onClick={goToNextSlide}
+								/>
+							</div>
+						</div>
+						<div className='carousel-dots'>
+							{slides.map((dotSlide) => (
+								<div
+									key={dotSlide.id}
+									className={`carousel-dot ${
+										dotSlide.id === slides[currentIndex].id ? "active" : ""
+									}`}
+									onClick={() =>
+										setCurrentIndex(
+											slides.findIndex((slide) => slide.id === dotSlide.id)
+										)
+									}
+								></div>
+							))}
+						</div>
+						<div className='carousel-subtext'>
+							{getSubtext()}
+							<div className='icon-box'>
+								{github()}
+								{live()}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
